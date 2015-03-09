@@ -1,0 +1,36 @@
+<case id="2" name="Wassem" computed_output="150.0" actual_output="11">
+		<attributes>
+			<attribute name="height" value="Short" />
+			<attribute name="Education" value="primary" />
+			<attribute name="Age" value="elder" />
+			<attribute name="Place_of_live" value="same_City" />
+			<attribute name="Weight" value="light" />
+		</attributes>
+	</case>
+	<case id="2" name="Wassem" computed_output="150.0" actual_output="11">
+		<attributes>
+			<attribute name="height" value="Medium" />
+			<attribute name="Education" value="secondry" />
+			<attribute name="Age" value="small" />
+			<attribute name="Place_of_live" value="same_City" />
+			<attribute name="Weight" value="light" />
+		</attributes>
+	</case>
+	<case id="2" name="Wassem" computed_output="150.0" actual_output="11">
+		<attributes>
+			<attribute name="height" value="Medium" />
+			<attribute name="Education" value="secondry" />
+			<attribute name="Age" value="big" />
+			<attribute name="Place_of_live" value="same_City" />
+			<attribute name="Weight" value="light" />
+		</attributes>
+	</case>
+	<case id="2" name="Wassem" computed_output="150.0" actual_output="11">
+		<attributes>
+			<attribute name="height" value="Medium" />
+			<attribute name="Education" value="Backaloriuos" />
+			<attribute name="Age" value="big" />
+			<attribute name="Place_of_live" value="Far" />
+			<attribute name="Weight" value="medium" />
+		</attributes>
+	</case>

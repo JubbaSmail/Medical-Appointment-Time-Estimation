@@ -1,0 +1,39 @@
+<factors>
+	<factor name="height" range_from="50" range_to="250" unit="Meters">
+		<memberships>
+			<membership name="Short" value="(Z 50 120)" />
+			<membership name="Medium" value="(PI 40 150)" />
+			<membership name="tall" value="(S 180 250)" />
+		</memberships>
+	</factor>
+	<factor name="Education" range_from="1" range_to="6" unit="Degree">
+		<memberships>
+			<membership name="primary" value="(1 0) (2 1) (3 0)" />
+			<membership name="secondry" value="(2 0) (3 1) (4 0)" />
+			<membership name="Backaloriuos" value="(3 0) (4 1) (5 0)" />
+			<membership name="Master" value="(4 0) (5 1) (6 0)" />
+		</memberships>
+	</factor>
+	<factor name="Age" range_from="1" range_to="100" unit="Years">
+		<memberships>
+			<membership name="small" value="(1 0) (5 1) (10 0)" />
+			<membership name="Young" value="(7 0) (14 1) (17 0)" />
+			<membership name="Adult" value="(16 0) (25 1) (30 0)" />
+			<membership name="big" value="(27 0) (40 1) (60 0)" />
+			<membership name="elder" value="(50 0) (70 1) (100 0)" />
+		</memberships>
+	</factor>
+	<factor name="Place_of_live" range_from="3" range_to="200" unit="Km">
+		<memberships>
+			<membership name="same_City" value="(3 0) (8 1) (10 0)" />
+			<membership name="Country_SIde" value="(8 0) (20 1) (30 0)" />
+			<membership name="Far" value="(28 0) (100 1) (200 0)" />
+		</memberships>
+	</factor>
+	<factor name="Weight" range_from="10" range_to="150" unit="kg">
+		<memberships>
+			<membership name="light" value="(10 0) (20 1) (30 0)" />
+			<membership name="medium" value="(25 0) (40 1) (70 0)" />
+		</memberships>
+	</factor>
+</factors>

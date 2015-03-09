@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/" title="Intelligent Esitmator" description="Site Root.">
+    <siteMapNode url="~/Default.aspx" title="Home" description="Intelligent Esitmator home page."/>
+    <siteMapNode url="~/Setup/Default.aspx" visible="false" title="Setup" description="Here you can send perform setup and administration operations." >
+      <siteMapNode url="~/Setup/Factors.aspx" title="Define Factors" description="Edit factors related to every case."/>
+      <siteMapNode url="~/Setup/Configuration.aspx" title="Configuration" description="Change system configuration." />
+      <siteMapNode url="~/Setup/FuzzyClips_Output.aspx" title="Fuzzy Clisp Output" description="See pipelining output of Fuzzy Clisps for debuging."/>
+    </siteMapNode>
+    <siteMapNode url="~/User/Default.aspx" title="User" description="In this section you can apply your administrative roles." >
+      <siteMapNode url="~/User/Cases.aspx" title="Edit Cases" description="Here you can add and edit new and existing cases' instances." />
+      <siteMapNode url="~/User/ActualOutputs.aspx" title="Actual Outputs" description="Here you can enter actual outputs." />
+      <siteMapNode url="~/User/Perform_Learning.aspx" title="Perform Learning" description="You can here anter the actual amount of an instance. and chose to generate the rules" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

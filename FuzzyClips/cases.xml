@@ -1,0 +1,61 @@
+<cases>
+	<case id="0" name="Ismail" computed_output="150.0" actual_output="9">
+		<attributes>
+			<attribute name="height" value="tall" />
+			<attribute name="Education" value="Backaloriuos" />
+			<attribute name="Age" value="small" />
+			<attribute name="Place_of_live" value="same_City" />
+			<attribute name="Weight" value="light" />
+		</attributes>
+	</case>
+	<case id="1" name="Muhammad" computed_output="150.0" actual_output="8">
+		<attributes>
+			<attribute name="height" value="tall" />
+			<attribute name="Education" value="Backaloriuos" />
+			<attribute name="Age" value="Adult" />
+			<attribute name="Place_of_live" value="Country_SIde" />
+			<attribute name="Weight" value="medium" />
+		</attributes>
+	</case>
+	<case id="2" name="Wassem" computed_output="150.0" actual_output="9">
+		<attributes>
+			<attribute name="height" value="tall" />
+			<attribute name="Education" value="Backaloriuos" />
+			<attribute name="Age" value="big" />
+			<attribute name="Place_of_live" value="same_City" />
+			<attribute name="Weight" value="light" />
+		</attributes>
+	</case>
+	
+	<case id="5" name="Mario" computed_output="150.0" actual_output="5">
+		<attributes>
+			<attribute name="height" value="Medium" />
+			<attribute name="Education" value="Backaloriuos" />
+			<attribute name="Age" value="elder" />
+			<attribute name="Place_of_live" value="same_City" />
+			<attribute name="Weight" value="light" />
+		</attributes>
+	</case>
+	
+	<case id="3" name="Rami" computed_output="150.0" actual_output="15">
+		<attributes>
+			<attribute name="height" value="Medium" />
+			<attribute name="Education" value="Backaloriuos" />
+			<attribute name="Age" value="Adult" />
+			<attribute name="Place_of_live" value="same_City" />
+			<attribute name="Weight" value="light" />
+		</attributes>
+	</case>
+	
+	<case id="4" name="Saed" computed_output="150.0" actual_output="15">
+		<attributes>
+			<attribute name="height" value="Medium" />
+			<attribute name="Education" value="Backaloriuos" />
+			<attribute name="Age" value="Adult" />
+			<attribute name="Place_of_live" value="same_City" />
+			<attribute name="Weight" value="light" />
+		</attributes>
+	</case>
+	
+	
+</cases>

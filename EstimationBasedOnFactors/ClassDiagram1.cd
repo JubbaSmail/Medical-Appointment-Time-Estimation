@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EstimationBasedOnFactors.Case">
+    <Position X="3.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEQAkBAEAAAAAAQQAgAEEAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Case.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EstimationBasedOnFactors.Constants">
+    <Position X="14.25" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEAAAAAAACAAAAABAAAAAAAAAAAAAACAAAAAUAAKA=</HashCode>
+      <FileName>Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EstimationBasedOnFactors.Factor">
+    <Position X="1" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQAAEQAAAFEgEAAAIAAAAAQAAAAEAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Factor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EstimationBasedOnFactors.Fuzzy_Inference_Engine">
+    <Position X="14.25" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACAgAABAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Fuzzy_Inference_Engine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EstimationBasedOnFactors.Machine_Learning">
+    <Position X="8" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAEAIAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Machine_Learning.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EstimationBasedOnFactors.Attribute">
+    <Position X="10.25" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAaAEAAAAAAAAAAAAACAEAAgAAAAAAAA=</HashCode>
+      <FileName>Machine_Learning.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EstimationBasedOnFactors.TreeNode">
+    <Position X="10.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAACAAAAAAgAAAAACABAAAgAAAAQAAAAAAAA=</HashCode>
+      <FileName>Machine_Learning.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EstimationBasedOnFactors.DecisionTreeID3">
+    <Position X="8" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IBAAAAQAABAAAAACAAAQBAAEIAAAAAAAAQIAAAAwAAA=</HashCode>
+      <FileName>Machine_Learning.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EstimationBasedOnFactors.MembershipFunction">
+    <Position X="5.75" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEACAAAAAgAAAAAAA=</HashCode>
+      <FileName>MembershipFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="9.75" />
+</ClassDiagram>

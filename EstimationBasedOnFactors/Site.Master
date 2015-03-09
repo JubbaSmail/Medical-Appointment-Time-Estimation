@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WorkFlowSite.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Intelligent Esitmator</title>
+    <link rel="shortcut icon" href="/images/icon.ico" type="image/x-icon" />
+    <link type="text/css" rel="Stylesheet" href="Styles/public.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="Body" style="width: 100%">
+        <table style="width: 750px;" cellpadding="0" cellspacing="0" align="center" class="Page">
+            <tr>
+                <td colspan="2" style="vertical-align: top; height: 170px;">
+                    <asp:Image ID="Image2" runat="server" Height="150px" Width="750px" ImageUrl="~/Images/Banner.png" />
+                    <div id="Path">
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server" SiteMapProvider="xmlSiteMapProvider"
+                            Font-Names="Verdana" Font-Size="Small" PathSeparator=" : ">
+                            <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
+                            <CurrentNodeStyle ForeColor="#333333" />
+                            <PathSeparatorTemplate>
+                                <span style="font-weight: bold; font-size: large; color: Navy">&gt;</span>
+                            </PathSeparatorTemplate>
+                            <NodeStyle Font-Bold="True" ForeColor="#ff6600" />
+                            <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
+                            <RootNodeTemplate>
+                                <%--
+                                <span style="color: Navy; font-weight: bold;">Pr<span style="color: #FF6600">o</span>Wr<span
+                                    style="color: #FF6600">o</span>kFl<span style="color: #FF6600">o</span>w</span>--%>
+                            </RootNodeTemplate>
+                        </asp:SiteMapPath>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 300px;">
+                <td style="vertical-align: top; background-color: #1D2D5C; width: 140px">
+                    <asp:Menu ID="Menu1" runat="server" BackColor="#1D2D5C" DataSourceID="SiteMapDataSource"
+                        DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="12px" ForeColor="White"
+                        StaticSubMenuIndent="10px" Width="100%" Font-Bold="True" StaticPopOutImageUrl="~/Images/OrangeLeftArrow.gif"
+                        EnableViewState="False">
+                        <StaticSelectedStyle BackColor="#507CD1" />
+                        <StaticMenuItemStyle VerticalPadding="5px" BorderStyle="Dashed" BorderColor="Orange"
+                            HorizontalPadding="15px" BorderWidth="1" />
+                        <StaticSelectedStyle BackColor="White" ForeColor="Orange" />
+                        <StaticHoverStyle BackColor="White" ForeColor="Orange" />
+                        <DynamicHoverStyle BackColor="White" ForeColor="#1d2d5c" />
+                        <DynamicMenuStyle />
+                        <DynamicItemTemplate>
+                            <%# Eval("Text") %>
+                        </DynamicItemTemplate>
+                        <DynamicSelectedStyle BackColor="#1d2d5c" />
+                        <DynamicMenuItemStyle ForeColor="Orange" BackColor="White" HorizontalPadding="15px"
+                            VerticalPadding="5px" BorderStyle="Dashed" BorderColor="#000099" BorderWidth="1" />
+                    </asp:Menu>
+                    <asp:Image runat="server" alt="" ImageUrl="~/Images/UnderUserName.gif" Style="width: 135px;
+                        height: 18px; margin: 2px;" />
+                </td>
+                <td class="Body" style="vertical-align: top; width: 610px; padding-top: 1px; padding-left: 5px;">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                        <span id="Title">
+                            <asp:Label ID="TitleLable" runat="server" Text=""></asp:Label>: </span><span id="TitleDescription">
+                                <asp:Label ID="DescriptionLabel" runat="server" Text=""></asp:Label></span>
+                        <%--I had set the 'MaxDataBindDepth' to 0. This will make only the 
+    first level of the links available. This well give a better performance than 
+    setting "ExpandDepth" to 0.--%><br />
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" EnableViewState="False"
+                            ShowStartingNode="False" StartFromCurrentNode="True" />
+                        <asp:ListView ID="ListView1" runat="server" DataSourceID="SiteMapDataSource1">
+                            <LayoutTemplate>
+                                <table id="itemPlaceholderContainer" runat="server" style="padding: 10px; border-spacing: 0px;
+                                    width: 100%;">
+                                    <tr id="itemPlaceholder" runat="server" />
+                                </table>
+                            </LayoutTemplate>
+                            <InsertItemTemplate>
+                            </InsertItemTemplate>
+                            <SelectedItemTemplate>
+                            </SelectedItemTemplate>
+                            <EmptyDataTemplate>
+                            </EmptyDataTemplate>
+                            <EditItemTemplate>
+                            </EditItemTemplate>
+                            <AlternatingItemTemplate>
+                                <tr runat="server" style="height: 30px; padding: 10px; background-color: #FFFAEE;
+                                    list-style-image: none;">
+                                    <td style="width: 30px; text-align: center;">
+                                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Circle.gif" />
+                                    </td>
+                                    <td style="width: 120px; text-align: left;">
+                                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("Url") %>'><%# Eval("Title") %></asp:HyperLink>:
+                                    </td>
+                                    <td style="width: auto;">
+                                        <asp:Label ID="DescriptionLabel" runat="server" Text='<%# Eval("Description") %>' />
+                                    </td>
+                                </tr>
+                            </AlternatingItemTemplate>
+                            <ItemTemplate>
+                                <tr style="height: 30px; padding: 10px 0px 0px 0px; background-color: #F0E9FE; color: #000000;">
+                                    <td style="width: 30px; text-align: center;">
+                                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Circle.gif" />
+                                    </td>
+                                    <td style="width: 120px; text-align: left;">
+                                        <asp:HyperLink runat="server" NavigateUrl='<%# Eval("Url") %>'><%# Eval("Title") %></asp:HyperLink>:
+                                    </td>
+                                    <td>
+                                        <asp:Label ID="DescriptionLabel" runat="server" Text='<%# Eval("Description") %>' />
+                                    </td>
+                                </tr>
+                            </ItemTemplate>
+                            <ItemSeparatorTemplate>
+                            </ItemSeparatorTemplate>
+                        </asp:ListView>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="vertical-align: top; height: 45px; vertical-align: bottom;">
+                    <div id="Footer" align="center">
+                        <hr color="navy" style="color: Navy;" />
+                        Intelligent Esitmator © 2010 
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" SiteMapProvider="xmlSiteMapProvider"
+        ShowStartingNode="False" />
+    </form>
+</body>
+</html>

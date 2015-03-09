@@ -1,0 +1,92 @@
+<cases>
+	<case id="0" name="Ismail" computed_output="150.0" actual_output="9">
+		<attributes>
+			<attribute name="height" value="160" />
+			<attribute name="Education" value="6" />
+			<attribute name="Age" value="40" />
+			<attribute name="Place_of_live" value="30" />
+			<attribute name="Weight" value="100" />
+		</attributes>
+	</case>
+	<case id="1" name="Muhammad" computed_output="150.0" actual_output="7">
+		<attributes>
+			<attribute name="height" value="180" />
+			<attribute name="Education" value="6" />
+			<attribute name="Age" value="20" />
+			<attribute name="Place_of_live" value="20" />
+			<attribute name="Weight" value="70" />
+		</attributes>
+	</case>
+	<case id="2" name="Samer" computed_output="150.0" actual_output="55">
+		<attributes>
+			<attribute name="height" value="51" />
+			<attribute name="Education" value="6" />
+			<attribute name="Age" value="45" />
+			<attribute name="Place_of_live" value="87" />
+			<attribute name="Weight" value="76" />
+		</attributes>
+	</case>
+	<case id="3" name="Saed" computed_output="10" actual_output="40">
+		<attributes>
+			<attribute name="height" value="100" />
+			<attribute name="Education" value="6" />
+			<attribute name="Age" value="21" />
+			<attribute name="Place_of_live" value="20" />
+			<attribute name="Weight" value="80" />
+		</attributes>
+	</case>
+	<case id="4" name="lplp" computed_output="10" actual_output="30">
+		<attributes>
+			<attribute name="height" value="250" />
+			<attribute name="Education" value="6" />
+			<attribute name="Age" value="23" />
+			<attribute name="Place_of_live" value="32" />
+			<attribute name="Weight" value="32" />
+		</attributes>
+	</case>
+	<case id="5" name="sdf" computed_output="10" actual_output="20">
+		<attributes>
+			<attribute name="height" value="234" />
+			<attribute name="Education" value="6" />
+			<attribute name="Age" value="32" />
+			<attribute name="Place_of_live" value="43" />
+			<attribute name="Weight" value="150" />
+		</attributes>
+	</case>
+	<case id="6" name="WWW" computed_output="10" actual_output="10">
+		<attributes>
+			<attribute name="height" value="50" />
+			<attribute name="Education" value="5" />
+			<attribute name="Age" value="50" />
+			<attribute name="Place_of_live" value="10" />
+			<attribute name="Weight" value="45" />
+		</attributes>
+	</case>
+	<case id="7" name="dsf" computed_output="10" actual_output="05">
+		<attributes>
+			<attribute name="height" value="201" />
+			<attribute name="Education" value="6" />
+			<attribute name="Age" value="100" />
+			<attribute name="Place_of_live" value="200" />
+			<attribute name="Weight" value="150" />
+		</attributes>
+	</case>
+	<case id="8" name="ujh" computed_output="10" actual_output="15">
+		<attributes>
+			<attribute name="height" value="100" />
+			<attribute name="Education" value="6" />
+			<attribute name="Age" value="44" />
+			<attribute name="Place_of_live" value="44" />
+			<attribute name="Weight" value="150" />
+		</attributes>
+	</case>
+	<case id="9" name="bhkj" computed_output="10" actual_output="25">
+		<attributes>
+			<attribute name="height" value="50" />
+			<attribute name="Education" value="6" />
+			<attribute name="Age" value="100" />
+			<attribute name="Place_of_live" value="200" />
+			<attribute name="Weight" value="23" />
+		</attributes>
+	</case>
+</cases>

@@ -1,0 +1,250 @@
+TRUE
+FuzzyCLIPS> 
+(batch "C:\\EstimationBasedOnFactors\\FuzzyClips\\input_membership_functions.clp")
+TRUE
+FuzzyCLIPS> (deftemplate factor_height
+	50 250 Meters
+	(
+		(Short (Z 50 120))
+		(Medium (PI 40 150))
+		(tall (S 180 250))
+	)
+)
+FuzzyCLIPS> 
+(deftemplate factor_Education
+	1 6 Degree
+	(
+		(primary (1 0) (2 1) (3 0))
+		(secondry (2 0) (3 1) (4 0))
+		(Backaloriuos (3 0) (4 1) (5 0))
+		(Master (4 0) (5 1) (6 0))
+	)
+)
+FuzzyCLIPS> 
+(deftemplate factor_Age
+	1 100 Years
+	(
+		(small (1 0) (5 1) (10 0))
+		(Young (7 0) (14 1) (17 0))
+		(Adult (16 0) (25 1) (30 0))
+		(big (27 0) (40 1) (60 0))
+		(elder (50 0) (70 1) (100 0))
+	)
+)
+FuzzyCLIPS> 
+(deftemplate factor_Place_of_live
+	3 200 Km
+	(
+		(same_City (3 0) (8 1) (10 0))
+		(Country_SIde (8 0) (20 1) (30 0))
+		(Far (28 0) (100 1) (200 0))
+	)
+)
+FuzzyCLIPS> 
+(deftemplate factor_Weight
+	10 150 kg
+	(
+		(light (10 0) (20 1) (30 0))
+		(medium (25 0) (40 1) (70 0))
+	)
+)
+FuzzyCLIPS> 
+(deftemplate case
+	(slot ID)
+	(slot Name)
+	(slot height (type FUZZY-VALUE factor_height))
+	(slot Education (type FUZZY-VALUE factor_Education))
+	(slot Age (type FUZZY-VALUE factor_Age))
+	(slot Place_of_live (type FUZZY-VALUE factor_Place_of_live))
+	(slot Weight (type FUZZY-VALUE factor_Weight))
+)
+FuzzyCLIPS> (batch "C:\\EstimationBasedOnFactors\\FuzzyClips\\output_templates.clp")
+TRUE
+FuzzyCLIPS> (deftemplate factor_Time
+	0 60 Minutes
+	(
+		(slot1 (Z 0 10))
+		(slot2 (PI 5 10))
+		(slot3 (PI 5 20))
+		(slot4 (PI 5 30))
+		(slot5 (PI 5 40))
+		(slot6 (PI 5 50))
+		(slot7 (S 50 60))
+	)
+)
+FuzzyCLIPS> 
+(deftemplate case_output
+	(slot ID)
+	(slot time (type FUZZY-VALUE factor_Time))
+)
+FuzzyCLIPS> 
+
+(batch "C:\\EstimationBasedOnFactors\\FuzzyClips\\input_rules.clp")
+TRUE
+FuzzyCLIPS> ;(set-threshold 0.6)
+;(disable-cf-rule-calculation)
+
+
+(defrule test
+	(SharedFile ?path)
+	(case
+		(ID ?id)
+		(height Short)
+	)
+	=>
+	(assert(case_output (ID ?id) (time slot1) ))
+	(save-facts ?path visible case_output)
+)
+FuzzyCLIPS> 
+(defrule test1
+	(SharedFile ?path)
+	(case
+		(ID ?id)
+		(height tall)
+	)
+	=>
+	(assert(case_output (ID ?id) (time slot6) ))
+	(save-facts ?path visible case_output)
+)
+FuzzyCLIPS> 
+(reset)
+FuzzyCLIPS> 
+(assert (SharedFile "C:\\EstimationBasedOnFactors\\FuzzyClips\\out.txt"))
+<Fact-1>
+FuzzyCLIPS> 
+(batch "C:\\EstimationBasedOnFactors\\FuzzyClips\\cases.clp")
+TRUE
+FuzzyCLIPS> (assert
+	(case 
+		(ID 0)
+		(Name Ismail)
+		(height (160 1))
+		(Education (6 1))
+		(Age (40 1))
+		(Place_of_live (30 1))
+		(Weight (100 1))
+	)
+)
+<Fact-2>
+FuzzyCLIPS> 
+(assert
+	(case 
+		(ID 1)
+		(Name Muhammad)
+		(height (180 1))
+		(Education (6 1))
+		(Age (20 1))
+		(Place_of_live (20 1))
+		(Weight (70 1))
+	)
+)
+<Fact-3>
+FuzzyCLIPS> 
+(assert
+	(case 
+		(ID 2)
+		(Name Samer)
+		(height (51 1))
+		(Education (6 1))
+		(Age (45 1))
+		(Place_of_live (87 1))
+		(Weight (76 1))
+	)
+)
+<Fact-4>
+FuzzyCLIPS> 
+(assert
+	(case 
+		(ID 3)
+		(Name Saed)
+		(height (100 1))
+		(Education (6 1))
+		(Age (21 1))
+		(Place_of_live (20 1))
+		(Weight (80 1))
+	)
+)
+<Fact-5>
+FuzzyCLIPS> 
+(assert
+	(case 
+		(ID 4)
+		(Name lplp)
+		(height (250 1))
+		(Education (6 1))
+		(Age (23 1))
+		(Place_of_live (32 1))
+		(Weight (32 1))
+	)
+)
+<Fact-6>
+FuzzyCLIPS> 
+(assert
+	(case 
+		(ID 5)
+		(Name sdf)
+		(height (234 1))
+		(Education (6 1))
+		(Age (32 1))
+		(Place_of_live (43 1))
+		(Weight (150 1))
+	)
+)
+<Fact-7>
+FuzzyCLIPS> 
+(assert
+	(case 
+		(ID 6)
+		(Name WWW)
+		(height (50 1))
+		(Education (5 1))
+		(Age (50 1))
+		(Place_of_live (10 1))
+		(Weight (45 1))
+	)
+)
+<Fact-8>
+FuzzyCLIPS> 
+(assert
+	(case 
+		(ID 7)
+		(Name dsf)
+		(height (201 1))
+		(Education (6 1))
+		(Age (100 1))
+		(Place_of_live (200 1))
+		(Weight (150 1))
+	)
+)
+<Fact-9>
+FuzzyCLIPS> 
+(assert
+	(case 
+		(ID 8)
+		(Name ujh)
+		(height (100 1))
+		(Education (6 1))
+		(Age (44 1))
+		(Place_of_live (44 1))
+		(Weight (150 1))
+	)
+)
+<Fact-10>
+FuzzyCLIPS> 
+(assert
+	(case 
+		(ID 9)
+		(Name bhkj)
+		(height (50 1))
+		(Education (6 1))
+		(Age (100 1))
+		(Place_of_live (200 1))
+		(Weight (23 1))
+	)
+)
+<Fact-11>
+FuzzyCLIPS> 
+
+(run)
+FuzzyCLIPS> 
+(exit)

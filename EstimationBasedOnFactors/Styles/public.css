@@ -1,0 +1,123 @@
+﻿.Body
+{
+	width: 780px;
+	z-index: 15;
+	left: 4px;
+	top: -5px;
+}
+.Page
+{
+	font-size: small;
+	font-family: Arial;
+	text-align: justify;
+}
+.Title
+{
+	color: #FF6600;
+	font-weight: bolder;
+	font-size: large;
+}
+.QLetterInFAQ
+{
+	color: #1d2d5c;
+	font-weight: bolder;
+	font-size: large;
+}
+.ALetterInFAQ
+{
+	color: #FF6600;
+	font-weight: bolder;
+	font-size: large;
+}
+#Title
+{
+	color: #FF6600;
+	font-weight: bolder;
+	font-size: large;
+}
+#TitleDescription
+{
+	color: Navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+.TitleDescription
+{
+	color: Navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+.subtitle
+{
+	color: #1d2d5c;
+	font-weight: bolder;
+	font-size: larger;
+}
+.StaticMenuItemStyle
+{
+	padding-left: 15px;
+}
+#LoggedInTemplate
+{
+	color: White;
+}
+.UserName
+{
+	font-weight: normal;
+}
+#Header
+{
+	position: absolute;
+	width: 750px;
+	top: 0px;
+	left: 0px;
+	height: 150px;
+	font-weight: 700;
+}
+#Path
+{
+	position: relative;
+	width: 620px;
+	height: 12px;
+	padding: 0px;
+	top: -3px;
+	left: 140px;
+}
+#GoBack
+{
+	text-align: right;
+	color: Maroon;
+	position: relative;
+	width: 30px;
+	height: 15px;
+	z-index: 10;
+	top: -24px;
+	left: 713px;
+}
+
+#Menu
+{
+	position: absolute;
+	width: 130px;
+	top: 169px;
+	left: 0px;
+	height: 135px;
+	z-index: 10;
+}
+#FastLinks
+{
+	color: Navy;
+	position: absolute;
+	top: 312px;
+	left: 0px;
+	font-size: small;
+	width: 130px;
+	z-index: 10;
+}
+#Footer
+{
+	position: relative;
+	text-align: center;
+	color: Navy;
+	font-weight: bold;
+}

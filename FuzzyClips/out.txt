@@ -1,0 +1,10 @@
+(case_output (ID 9) (time [ slot1 ] OR [ slot6 ])) CF 1.00 
+(case_output (ID 8) (time [ slot1 ] OR [ slot6 ])) CF 1.00 
+(case_output (ID 7) (time [ slot1 ] OR [ slot6 ])) CF 1.00 
+(case_output (ID 6) (time [ slot1 ] OR [ slot6 ])) CF 1.00 
+(case_output (ID 5) (time [ slot1 ] OR [ slot6 ])) CF 1.00 
+(case_output (ID 4) (time [ slot1 ] OR [ slot6 ])) CF 1.00 
+(case_output (ID 3) (time [ slot1 ] OR [ slot6 ])) CF 1.00 
+(case_output (ID 2) (time [ slot1 ] OR [ slot6 ])) CF 1.00 
+(case_output (ID 1) (time [ slot1 ] OR [ slot6 ])) CF 1.00 
+(case_output (ID 0) (time [ slot1 ] OR [ slot6 ])) CF 1.00 
